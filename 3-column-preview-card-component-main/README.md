@@ -40,7 +40,7 @@ Users should be able to:
 
 - Solution URL: [Add solution URL here](sttps://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Repository: [https://github.com/lastiroko/BRUnej2/tree/main/3-column-preview-card-component-main]
 ## My process
 
 ### Built with
