@@ -1,0 +1,166 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    
+    
+  }
+  p {
+    width: 95%;
+    color: var(--clr-sec-150);
+    font-size: 15px;
+  }
+  h1,
+  h2,
+  h3 {
+    line-height: 1;
+    font-family: var(--ff-100);
+    font-size: 2.3rem;
+
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root {
+    --clr-prm-500        : hsl(31, 77%, 52%);
+    --clr-prm-700        : hsl(184, 100%, 22%);
+    --clr-prm-900        : hsl(179, 100%, 13%);
+
+    --clr-sec-150: hsla(0, 0%, 100%, 0.75);
+    --clr-sec-250: hsl(0, 0%, 95%);
+    --ff-100: 'Big Shoulders Display', cursive;
+    --ff-200: 'Lexend Deca', sans-serif;
+
+
+  }
+  /* General Styling */
+  body {
+    margin: 3.3rem 0;
+    margin-inline: 1.3rem;
+    background-color: #fff;
+    font-family: var(--ff-200);
+    color: #fff;
+    place-content: center;
+  }
+  .sedan {
+    background-color: var(--clr-prm-500);
+    border-radius: .5rem .5rem 0 0;
+    
+  }
+  .suvs {
+     
+      background-color: var(--clr-prm-700);
+  }
+  
+  .luxury {
+    border-radius: 0 0 .5rem .5rem ;
+      background-color: var(--clr-prm-900);
+    
+  }
+  .grid-group{
+    display: grid;
+    gap: 1.5rem;
+    text-align: left;
+    padding: 3rem;
+
+  }
+  /* Button */
+  .btn {
+    
+    padding: .5rem;
+    border-radius: 5rem;
+    width: 60%;
+    border: none;
+  }
+  .sedan .btn {
+color: var(--clr-prm-500);  }
+  .suvs .btn {
+color: var(--clr-prm-700);
+  }
+  .luxury .btn {
+    color: var(--clr-prm-900);
+  }
+  .btn:hover {
+    color: #fff;
+    background-color: transparent;
+    border: solid .105rem;
+    cursor: pointer;
+
+  }
+
+  /* Mobile */
+  @media (min-width: 600px) {
+    body {
+      display: grid;
+      height: 80%;
+      place-content: center;
+      background-color: #fff;
+      font-family: var(--ff-200);
+      color: #fff;
+    }
+    .flex-group {
+      display: flex;
+      width: 60rem;
+    }
+    .sedan {
+      
+      border-radius: .5rem 0 0 .5rem;
+    }
+    .luxury {
+      
+      
+      border-radius: 0 .5rem .5rem 0;
+  }
+  .btn {
+    margin-top: 3.5em;
+    padding: .5rem;
+    border-radius: 5rem;
+    width: 60%;
+    border: none;
+  }
+      }
